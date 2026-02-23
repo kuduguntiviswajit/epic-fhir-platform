@@ -11,11 +11,8 @@ DATABASE_PATH = BASE_DIR / "data" / "fhir_warehouse.db"
 LOG_PATH = BASE_DIR / "logs" / "pipeline.log"
 REPORTS_PATH = BASE_DIR / "reports"
 
-# Epic FHIR Sandbox
-EPIC_BASE_URL = "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4"
-EPIC_TOKEN_URL = "https://fhir.epic.com/interconnect-fhir-oauth/oauth2/token"
-EPIC_CLIENT_ID = os.getenv("EPIC_CLIENT_ID")
-EPIC_PRIVATE_KEY_PATH = BASE_DIR / "epic_fhir" / "private_key.pem"
+# FHIR Server
+FHIR_BASE_URL = "https://hapi.fhir.org/baseR4"
 
 # FHIR Resources to extract
 FHIR_RESOURCES = ["Patient", "Observation", "MedicationRequest", "Encounter"]
