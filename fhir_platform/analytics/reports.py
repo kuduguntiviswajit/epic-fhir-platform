@@ -128,3 +128,4 @@ class ClinicalReports:
             ORDER BY run_at DESC
             LIMIT 20
         """)
+

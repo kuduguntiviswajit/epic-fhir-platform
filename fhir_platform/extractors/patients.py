@@ -1,5 +1,5 @@
 import logging
-from epic_fhir.auth import FHIRClient
+from fhir_platform.auth import FHIRClient
 
 logger = logging.getLogger(__name__)
 
@@ -38,3 +38,4 @@ class PatientExtractor:
             "language": resource.get("communication", [{}])[0]
                 .get("language", {}).get("text"),
         }
+

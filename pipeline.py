@@ -1,13 +1,13 @@
 import logging
 from pathlib import Path
 from config import LOG_PATH
-from epic_fhir.auth import FHIRClient
-from epic_fhir.extractors.patients import PatientExtractor
-from epic_fhir.extractors.observations import ObservationExtractor
-from epic_fhir.extractors.medications import MedicationExtractor
-from epic_fhir.extractors.encounters import EncounterExtractor
-from epic_fhir.transformers.fhir_normalizer import FHIRNormalizer
-from epic_fhir.loaders.warehouse import FHIRWarehouse
+from fhir_platform.auth import FHIRClient
+from fhir_platform.extractors.patients import PatientExtractor
+from fhir_platform.extractors.observations import ObservationExtractor
+from fhir_platform.extractors.medications import MedicationExtractor
+from fhir_platform.extractors.encounters import EncounterExtractor
+from fhir_platform.transformers.fhir_normalizer import FHIRNormalizer
+from fhir_platform.loaders.warehouse import FHIRWarehouse
 
 Path(LOG_PATH).parent.mkdir(parents=True, exist_ok=True)
 

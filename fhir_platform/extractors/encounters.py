@@ -1,5 +1,5 @@
 import logging
-from epic_fhir.auth import FHIRClient
+from fhir_platform.auth import FHIRClient
 
 logger = logging.getLogger(__name__)
 
@@ -46,3 +46,4 @@ class EncounterExtractor:
             "location": resource.get("location", [{}])[0]
                 .get("location", {}).get("display"),
         }
+

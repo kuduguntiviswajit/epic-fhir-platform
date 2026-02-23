@@ -1,5 +1,5 @@
 import logging
-from epic_fhir.auth import FHIRClient
+from fhir_platform.auth import FHIRClient
 
 logger = logging.getLogger(__name__)
 
@@ -52,3 +52,4 @@ class ObservationExtractor:
             "is_abnormal": is_abnormal,
             "effective_date": resource.get("effectiveDateTime"),
         }
+

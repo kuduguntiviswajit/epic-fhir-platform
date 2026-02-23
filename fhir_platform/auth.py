@@ -68,3 +68,4 @@ class FHIRClient:
 
         logger.info(f"Fetched {len(records)} records for {resource}")
         return records[:max_records]
+

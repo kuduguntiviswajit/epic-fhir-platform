@@ -95,3 +95,4 @@ class FHIRNormalizer:
             return float(value)
         except (ValueError, TypeError):
             return None
+

@@ -7,8 +7,8 @@ from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
-from epic_fhir.analytics.reports import ClinicalReports
-from epic_fhir.loaders.warehouse import FHIRWarehouse
+from fhir_platform.analytics.reports import ClinicalReports
+from fhir_platform.loaders.warehouse import FHIRWarehouse
 from pipeline import run_pipeline
 
 st.set_page_config(
@@ -235,3 +235,4 @@ with st.sidebar:
     selection = st.radio("Go to", list(pages.keys()))
 
 pages[selection]()
+

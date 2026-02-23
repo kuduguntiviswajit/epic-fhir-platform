@@ -133,3 +133,4 @@ class FHIRWarehouse:
         with self._get_connection() as conn:
             cursor = conn.execute(f"SELECT COUNT(*) FROM {table}")
             return cursor.fetchone()[0]
+

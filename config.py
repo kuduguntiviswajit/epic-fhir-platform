@@ -21,3 +21,4 @@ FHIR_RESOURCES = ["Patient", "Observation", "MedicationRequest", "Encounter"]
 BATCH_SIZE = 50
 MAX_RETRIES = 3
 REQUEST_TIMEOUT = 30
+
